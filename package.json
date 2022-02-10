@@ -3,11 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite & json-server --watch db.json",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.25.0",
+    "json-server": "^0.17.0",
     "uuid": "^8.3.2",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12",
