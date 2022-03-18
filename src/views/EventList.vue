@@ -1,10 +1,3 @@
-<template>
-  <h1>Events for Good</h1>
-  <div class="events">
-    <EventCard v-for="event in events" :key="event.id" :event="event" />
-  </div>
-</template>
-
 <script>
 import EventCard from '../components/EventCard.vue'
 export default {
@@ -26,6 +19,13 @@ export default {
   }
 }
 </script>
+
+<template>
+  <h1>Events for Good</h1>
+  <div class="events">
+    <EventCard v-for="event in events" :key="event.id" :event="event" />
+  </div>
+</template>
 
 <style scoped>
 .events {
