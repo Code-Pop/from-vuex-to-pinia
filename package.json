@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.25.0",
     "json-server": "^0.17.0",
+    "pinia": "^2.0.12",
     "uuid": "^8.3.2",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12",
