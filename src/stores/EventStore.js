@@ -12,6 +12,15 @@ export const useEventStore = defineStore('EventStore', {
     numberOfEvents: state => state.events.length
   },
   actions: {
+    fetchEvent(id) {
+      return EventService.getEvent(id)
+        .then(response => {
+          this.event = response.data
+        })
+        .catch(error => {
+          throw error
+        })
+    },
     fetchEvents() {
       return EventService.getEvents()
         .then(response => {
