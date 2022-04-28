@@ -18,9 +18,6 @@ export default createStore({
     },
     SET_EVENT(state, event) {
       state.event = event
-    },
-    SET_EVENTS(state, events) {
-      state.events = events
     }
   },
   actions: {
@@ -28,15 +25,6 @@ export default createStore({
       return EventService.postEvent(event)
         .then(() => {
           commit('ADD_EVENT', event)
-        })
-        .catch(error => {
-          throw error
-        })
-    },
-    fetchEvents({ commit }) {
-      return EventService.getEvents()
-        .then(response => {
-          commit('SET_EVENTS', response.data)
         })
         .catch(error => {
           throw error
