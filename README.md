@@ -1,28 +1,20 @@
-# From Pinia to Vuex
+# From Vuex to Pinia
 
-This is the companion repo to the Vue Master course: From Pinia to Vuex.
+This is the companion repo to the Vue Master course: From Vuex to Pinia.
 
-# Run options 
+# Local Setup Instructions
 
-Start a dev server and a JSON database
+```sh
+# Install dependencies
+npm install
 
-dev server on: http://localhost:8080
+# Run local server with database
+npm run dev
+```
 
-database: http://localhost:3000/events
+If you're having issues with running the json-server for the database, you will also want to run the following command to run the database separately.
 
-## Using yarn
-
-    yarn dev
-
-## Using npm
-
-    npm run dev
-
-## Plain vite / json-server
-
-    vite
-
-    json-server --watch db.json
-
-
-
+```sh
+# Run database
+npm run db
+```
